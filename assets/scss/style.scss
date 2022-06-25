@@ -1,0 +1,290 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.topbar{
+    width: 100%;
+    height: 45px;
+    background-color: whitesmoke;
+    
+
+    .contacts{
+        
+
+        li{
+            margin: 5px;
+
+        }
+
+        i{
+            color: #273b4c;
+        }
+    }
+    ul{
+        padding-left: 0;
+
+        li{
+            list-style: none;
+            a{
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+    .medias{
+            
+        ul{
+            padding-left: 0;
+
+            li{
+                margin: 5px;
+            }
+        }
+        i{
+            color: #437099;
+        } 
+    }
+}
+
+
+#navbar-section{
+   
+    .navbar{
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0px;
+        bottom: 10px;
+    }
+
+    .logo{
+        a{
+            text-decoration: none;
+        }
+    }
+    ul{
+        padding-left: 0;
+
+        li{
+            margin: 5px;
+            list-style: none;
+
+            a{
+                text-decoration: none;
+                font-size: 15px;
+                color: #273b4c;
+            }
+        }
+    }
+}
+#main-section{
+    background-attachment: fixed;
+    
+    h1{
+        color: #2c4964;
+    }
+    p{
+        font-size: 20px;
+        color: #2c4964;
+    }
+}
+#card-section{
+    position: relative;
+    
+
+   .punkt{
+    border-radius: 5px;
+   }
+
+    .isMain{
+        .punkt *{
+            
+            padding: 10px;
+        }
+        
+        .punkt{
+            width: 100%;
+            background-color: #1977cc;
+            text-align: center;
+            
+
+            .mainBtn{
+                background: rgba(255, 255, 255, 0.2);
+                border-radius: 50px;
+            }
+        }
+    }
+    
+    .another{
+         margin-top: 50px;
+
+        .punkt *{
+            
+            padding: 10px;
+        }
+        .punkt{
+            width: 95%;
+            background-color: whitesmoke;
+            text-align: center;
+            
+            
+            i{
+                width: 50px;
+                height: 50px;
+                font-size: 30px;
+                color:#437099;
+                margin-top: 25px;
+            }
+            p{
+                color: #848484;
+            }
+        }
+    }
+}
+#service-card{
+
+    .service-punkt *{
+        margin-bottom: 25px;
+    }
+    .service-punkt{
+        
+        border: 1px solid gray;
+        margin-top: 25px;
+        text-align: center;
+        padding: 50px 25px 50px 25px;
+        transition: .7s;
+        
+        h5{
+            color: #2c4964;
+            font-size: 25px;
+        }
+
+        i{
+            width: 50px;
+            height: 50px;
+            background-color: #1977cc;
+            border-radius: 5px;
+            font-size: 20px;
+            padding: 10px;
+            color: white;
+            box-shadow: 4px 4px 3px 3px #badaf7;
+            margin-top: 25px;
+        }
+
+        &:hover{
+            background-color: #1977cc;
+
+            i{
+                color: #1977cc;
+                background-color: white;
+                box-shadow: 4px 4px 3px 3px #badaf7;
+            }
+            h5{
+                color: white;
+            }
+            span{
+                color: white;
+            }
+        }
+        
+    }
+}
+@media screen and(max-width: 1400px) {
+    .another{
+
+        .punkt{
+            height: 300px;
+        }
+    }
+}
+
+@media screen and(min-width: 1400px){
+    .another{
+
+        .punkt{
+            height: 250px;
+        }
+    }
+}
+@media screen and(min-width: 992px) {
+    #navbar-section{
+        .navbar-toggler{
+            display: none
+        }
+    }
+    #card-section{
+        
+        bottom: 150px;
+
+        .mainBtn{
+           width: 50%;
+        }
+    }
+}
+@media screen and(max-width: 992px){
+    #navbar-section{
+        .services{
+            display: none;
+        }
+    }
+
+    .topbar{
+
+        .medias{
+            display: none;
+        }
+    }
+    #card-section{
+        top: 30px;
+
+        .mainBtn{
+            width: 50%;
+         }
+
+         .another{
+
+            .punkt{
+                height: 250px;
+            }
+        }
+    }
+}
+@media screen and(min-width: 768px){
+    #main-section{
+        height: 500px;
+
+    .row{
+        height: 500px;
+
+        .description{
+            height: 250px;
+        }
+      }
+    }
+}
+@media screen and(max-width: 768px){
+    .topbar{
+
+        .contacts{
+            height: 15px;
+
+            li{
+                font-size: 10px;
+            }
+        }
+    }
+    #main-section{
+        background-position: center;
+        background-repeat:  no-repeat;
+        height: 300px;
+        display: flex;
+        align-items: center;
+
+    }
+
+    #service-card{
+        margin-top: 40px;
+    }
+}
+
